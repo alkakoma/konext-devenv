@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "JavaScript development environment",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-chack open:src",
-    "open:src": "buildScripts/srcServer.js",
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "babel-node buildScripts/srcServer.js",
     "security-check":"nsp check",
     "localtunnel":"lt --port 3000 --subdomain konext",
-    "share": "npm-run-all --parallem "
+    "share": "npm-run-all --parallel"
   },
   "author": "Makabu Christian",
   "license": "MIT",
