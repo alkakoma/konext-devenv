@@ -9,12 +9,12 @@ describe('My first test', () => {
 });
 
 describe('index.html', () => {
-    it('should say Hello', (done) => {
+    it('should say Hello', () => {
         const index = fs.readFileSync('./src/index.html', 'utf-8');
-        jsdom.env(index, (err, window) => {
-            const h1 = window.document.getElementByTagName('h1')[0];
-            expect(h1.innerHtml).to.equal('Hello Node World');
-            done();
+        jsdom.env(index, function (err, window) {
+            const h1 = window.document.getElementsByTagName('h1')[0];
+            expect(h1.innerHtml).to.equal("Hello Node World");
+            //done();
             window.close();
         })
     });
