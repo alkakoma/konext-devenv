@@ -21,7 +21,7 @@
     "module": "^1.2.5",
     "npm": "^5.7.1",
     "uuid": "^3.2.1",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "6.16.0",
