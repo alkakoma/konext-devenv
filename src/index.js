@@ -1,4 +1,4 @@
-import './index.css';
+//import './index.css';
 import {getUsers} from './api/userApi';
 
 //Populate table with users via API calls
@@ -14,5 +14,6 @@ getUsers().then(result => {
         <td>${user.email}</td>
         </tr>`
     });
+
     global.document.getElementById('users').innerHtml = usersBody;
 });

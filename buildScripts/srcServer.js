@@ -19,7 +19,8 @@ app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
-app.get('/users', (req,res) => {
+app.get('/users', function(req,res) {
+    // Data acts as a real database
     res.json([
         {"id": 1, "firstname": "Christian", "lastname": "Makabu", "email": "chris@mail.com" },
         {"id": 2, "firstname": "Eliot", "lastname": "Imperial", "email": "eliot@gmail.com" },
