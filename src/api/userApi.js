@@ -13,5 +13,5 @@ function onSuccess (response) {
 }
 
 function onError (error) {
-    console.log(error);  //eslint-disale-line no-console
+    console.log(error);  //eslint-disable-line no-console
 }
